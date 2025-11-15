@@ -6,7 +6,18 @@
 #include <cstdint>
 
 int main(){
-    
+    float target_x;
+    int32_t sprite_x;
+    uint32_t player_x;
+
+    target_x = -123.45;
+    sprite_x = target_x;
+    player_x = sprite_x;
+
+    std::cout << "target_x (Float) = " << target_x << std::endl;
+    std::cout << "sprite_x (Int32) = " << sprite_x << std::endl;
+    std::cout << "player_x (uint32) = " << static_cast<int32_t>(player_x) << std::endl;
+
     std::cout << std::endl << std::endl;
     return 0;
 }
